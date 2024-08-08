@@ -101,7 +101,7 @@ class NoteAppService {
     return target == null ? null : NoteDto(target);
   }
 
-  Future<List<NoteDto?>> getNoteList({required String categoryId}) async {
+  Future<List<NoteDto>> getNoteList({required String categoryId}) async {
     final targetId = CategoryId(categoryId);
     final notes = await _repository.findByCategory(targetId);
 
