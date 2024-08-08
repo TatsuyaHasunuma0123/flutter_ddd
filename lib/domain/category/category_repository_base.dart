@@ -1,6 +1,4 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter_ddd/domain/category/value/category_id.dart';
-import 'package:flutter_ddd/domain/category/value/category_name.dart';
+import 'package:flutter_ddd/domain/category/category.dart';
 
 abstract class CategoryRepositoryBase {
   Future<T> transaction<T>(Future<T> Function() f);
