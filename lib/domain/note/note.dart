@@ -28,17 +28,14 @@ class Note {
   @override
   int get hashCode => runtimeType.hashCode ^ id.hashCode;
 
-  // ignore: use_setters_to_change_properties
   void changeTitle(NoteTitle title) {
     _title = title;
   }
 
-  // ignore: use_setters_to_change_properties
   void changeBody(NoteBody body) {
     _body = body;
   }
 
-  // ignore: use_setters_to_change_properties
   void changeCategory(CategoryId categoryId) {
     _categoryId = categoryId;
   }

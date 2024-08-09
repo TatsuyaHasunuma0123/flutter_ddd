@@ -18,7 +18,6 @@ class Category {
   @override
   int get hashCode => runtimeType.hashCode ^ id.hashCode;
 
-  // ignore: use_setters_to_change_properties
   void changeName(CategoryName newName) {
     _name = newName;
   }
